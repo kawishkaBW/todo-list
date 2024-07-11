@@ -1,0 +1,49 @@
+.login-container {
+  background: linear-gradient(120deg, #3494e6, #ec6ead);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  border: 5px solid #333;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fixed-navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .content {
+    margin-top: 60px;
+  }
+  
+  .dotted-background {
+    background-image: radial-gradient(circle, #a7c3fa 2px, transparent 2px);
+    background-size: 20px 20px;
+    min-height: 80vh;
+    position: relative;
+    animation: wave 2s infinite linear;
+  }
+  
+  @keyframes wave {
+    from {
+      background-position: 20px  0;
+    }
+    to {
+      background-position: 0 20px;
+    }
+  }
+  
+  

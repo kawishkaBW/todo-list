@@ -1,0 +1,70 @@
+.sign-up-container {
+    background: linear-gradient(120deg, #fbfcfd, hsl(226, 81%, 83%));
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    border: 3px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-box:focus {
+    border-color: #3494e6;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #3494e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2673a0;
+  }
+  
+  .text-red-500 {
+    color: #f56565;
+  }
+  
+  .text-primary {
+    color: #3494e6;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .sign-up-container {
+      width: 90%;
+      max-width: 350px;
+    }
+  }
+  
